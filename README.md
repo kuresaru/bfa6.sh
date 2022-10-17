@@ -4,14 +4,20 @@
 
 BFA6 = Bilibili Followings Attribute 6
 
-# Usage
+## Usage
 
 ```shell
 ./bfa6.sh $SESSDATA
 ```
 
-# References
+## References
 
 + [https://github.com/SocialSisterYi/bilibili-API-collect](bilibili-API-collect)
 + [https://github.com/dominictarr/JSON.sh](dominictarr/JSON.sh)
 
+
+## 打了三遍了, 脑子不好使的时候千万不要打代码
+
+![images/2022-10-17_214109.jpg](images/2022-10-17_214109.jpg)
+
+![images/2022-10-17_214946.jpg](images/2022-10-17_214946.jpg)
