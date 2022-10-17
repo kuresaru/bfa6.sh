@@ -12,8 +12,8 @@ BFA6 = Bilibili Followings Attribute 6
 
 ## References
 
-+ [https://github.com/SocialSisterYi/bilibili-API-collect](bilibili-API-collect)
-+ [https://github.com/dominictarr/JSON.sh](dominictarr/JSON.sh)
++ [bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)
++ [dominictarr/JSON.sh](https://github.com/dominictarr/JSON.sh)
 
 
 ## 打了三遍了, 脑子不好使的时候千万不要打代码
