@@ -18,13 +18,13 @@ PN=1
 CNT=0
 
 echo "MID=$MID"
-FLCNT=$(followings | ./JSON.sh/JSON.sh | awk '/^\["data","total"\]/{print $2}')
+FLCNT=$(followings | ./JSON.sh/JSON.sh -l | awk '/^\["data","total"\]/{print $2}')
 echo "关注数 $FLCNT"
 echo --------
 
 while [ $CNT -lt $FLCNT ]; do
     followings |
-        ./JSON.sh/JSON.sh |
+        ./JSON.sh/JSON.sh -l |
         grep -E '\["data","list",[0-9]+,"(attribute|uname|sign)"' |
         sed -r 's/^\["data","list",//g' |
         sed -r 's/,"(.+)"\]\s+/\t\1\t/g' |
