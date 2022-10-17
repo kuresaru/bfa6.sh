@@ -5,7 +5,7 @@
 SD="$(sed -r 's/%2[Cc]/,/g' <<<"$1" | sed -r 's/%2[Aa]/*/g')"
 
 IPV=6
-curl -6s ident.me &>/dev/null || IPV=4
+curl -6sko /dev/null https://api.bilibili.com 2> /dev/null || IPV=4
 
 MID=$(mymid)
 
