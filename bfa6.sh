@@ -25,11 +25,10 @@ echo --------
 while [ $CNT -lt $FLCNT ]; do
     followings |
         ./JSON.sh/JSON.sh |
-        grep -E '\["data","list",[0-9]+,"(attribute|uname)"' |
+        grep -E '\["data","list",[0-9]+,"(attribute|uname|sign)"' |
         sed -r 's/^\["data","list",//g' |
-        sed -r 's/,"(attribute|uname)"\]\s+/\t\1\t/g' |
-        awk -F'\t' -f followings.awk |
-        sed -r 's/(^")|("$)//g'
+        sed -r 's/,"(.+)"\]\s+/\t\1\t/g' |
+        awk -F'\t' -f followings.awk
     CNT=$((CNT + 20))
     PN=$((PN + 1))
 done
